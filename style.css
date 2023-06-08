@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+}
+
+/**
+    *Main containers styling is starts from here
+**/
+
+.main {
+    display: flex;
+    padding: 40px;
+}
+
+@media screen and (max-width: 480px) {
+    .main {
+        display: unset;
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    height: 300px;
+    width: 50%;
+}
+
+@media screen and (max-width: 480px) {
+    .container{
+        width: 100%;
+    }
+}
+
+.container div {
+    width: 30%;
+    height: 100px;
+    padding: 10px;
+    background-color: rgb(12, 76, 148);
+    border: 1px solid gray;
+    color: rgb(236, 240, 240);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: move;
+}
+
+.container div.dragging {
+    opacity: 0.5;
+}
+
+#container1 {
+    background-color: black;
+}
+
+#container2 {
+    background-color: lightblue;
+}
+
+
+/*
+    * Message div
+*/
+
+#message {
+    display: none;
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+    padding: 20px;
+    width: 169px;
+    border-radius: 10px;
+    background-color: rgb(15, 184, 120);
+}
+
+
+/*
+    * Reset Button
+*/
+
+#resetButton {
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: red;
+    color: white;
+}

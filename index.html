@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Drag and Drop Assignment</title>
+    </head>
+
+    <body>
+        <div class="main">
+            <!-- Main div which contains two containers -->
+            <div class="container" id="container1">
+                <!-- Container 1 which contains dragable Items -->
+                <div draggable="true">Hii I am text 1</div>
+                <div draggable="true">Hii I am text 2 try me to drop on second container</div>
+                <div draggable="true">I am text 3 you can also try me to drop there</div>
+            </div>
+    
+            <div class="container" id="container2">
+                <!-- Container 2 which accepts dragged items -->
+            </div>  
+        </div>
+        <div id="message">
+            <!-- Message div which contains success message on successfull transfer -->
+            Item dropped!
+        </div>
+        <button id="resetButton">
+            <!-- Reset Button used to reset the change -->
+            Reset
+        </button>
+
+        <script src="./index.js"></script>
+    </body>
+
+</html>
